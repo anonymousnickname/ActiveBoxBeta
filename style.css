@@ -28,8 +28,9 @@ p {
 ===================*/
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -191,7 +192,7 @@ p {
     line-height: 1.5;
 }
 
-/* Features
+/* Works
 ===================*/
 
 .works {
@@ -248,4 +249,136 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5px;
+}
+
+/* Team
+===================*/
+
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.team__prof {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team__text {
+    line-height: 1.5;
+    color: #6c7279;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+/* Team
+===================*/
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+
+    border: 1px solid #e8ecee;
+
+    transition: background .1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+    fill:#000
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    fill:#c6cacc;
+
+    transition: fill .1s linear;
+}
+
+/* Reviews
+===================*/
+
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+}
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo,
+.reviews__content {
+    width: 50%;
+}
+
+.reviews__photo {
+    height: 500px;
+    position: relative;
+}
+
+.reviews__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform:  translateY(-50%);
+    z-index: 1;
+}
+
+.reviews__content {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.reviews__text {
+    font-family: 'Cardo', sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
