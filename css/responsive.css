@@ -10,6 +10,21 @@
     /* Nav */
     .nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        background-color: #31344e;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
     }
 
     /* Burger */
