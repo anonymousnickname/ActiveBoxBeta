@@ -206,11 +206,13 @@ p {
     overflow: hidden;
 }
 
-.works__item:active .works__content {
+
+
+.works__item:hover .works__content {
     opacity: 1;
 }
 
-.works__item:hover .works__content {
+.opacity {
     opacity: 1;
 }
 

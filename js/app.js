@@ -62,4 +62,12 @@ $(function () {
         dots: true
     });
 
+    let worksItems = document.querySelectorAll('.works__item'),
+        worksContents = document.querySelectorAll('.works__content');
+
+        for (let i = 0; i < worksItems.length; i++) {
+            worksItems[i].addEventListener('click', function() {
+                worksContents[i].classList.add('opacity')
+            })
+        }
 });
